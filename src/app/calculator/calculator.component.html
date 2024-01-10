@@ -1,0 +1,25 @@
+<div class="calculator">
+  <input [value]="display" class="display" readonly />
+
+  <button (click)="onButtonClick('7')">7</button>
+  <button (click)="onButtonClick('8')">8</button>
+  <button (click)="onButtonClick('9')">9</button>
+  <button (click)="onButtonClick('/')">/</button>
+
+  <button (click)="onButtonClick('4')">4</button>
+  <button (click)="onButtonClick('5')">5</button>
+  <button (click)="onButtonClick('6')">6</button>
+  <button (click)="onButtonClick('*')">*</button>
+
+  <button (click)="onButtonClick('1')">1</button>
+  <button (click)="onButtonClick('2')">2</button>
+  <button (click)="onButtonClick('3')">3</button>
+  <button (click)="onButtonClick('-')">-</button>
+
+  <button (click)="onButtonClick('0')">0</button>
+  <button (click)="onButtonClick('.')">.</button>
+  <button (click)="calculate()">=</button>
+  <button (click)="onButtonClick('+')">+</button>
+
+  <button (click)="clear()">C</button>
+</div>

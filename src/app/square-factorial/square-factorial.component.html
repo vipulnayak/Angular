@@ -1,0 +1,20 @@
+<div class="calculator">
+    <label>Enter a number:</label>
+    <input type="number" id="numberInput" />
+  
+    <button (click)="calculateSquare()">Calculate Square</button>
+    <button (click)="calculateFactorial()">Calculate Factorial</button>
+  
+    <div *ngIf="squareResult !== null">
+      <p>{{ number }} squared is {{ squareResult }}</p>
+    </div>
+  
+    <div *ngIf="factorialResult !== null">
+      <p>{{ number }}! = {{ factorialResult }}</p>
+    </div>
+  
+    <div *ngIf="factorialResult === null && squareResult === null">
+      <p>Results will be displayed here.</p>
+    </div>
+  </div>
+  

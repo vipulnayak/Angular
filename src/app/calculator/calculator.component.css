@@ -1,0 +1,32 @@
+.calculator {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.display {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  width: 70px;
+  height: 50px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the '=' button differently */
+button[value='='] {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Style the 'C' button differently */
+button[value='C'] {
+  background-color: #ff4d4d;
+  color: white;
+}
